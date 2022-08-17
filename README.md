@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [Figma test](https://www.figma.com/file/RUGWgKxyTvULcVeE3OcJE8/PruebaTecnica?node-id=0%3A1)
 
+## Despliegue
+
+[Url despliegue](https://www.figma.com/file/RUGWgKxyTvULcVeE3OcJE8/PruebaTecnica?node-id=0%3A1)
+
 ### `npm start`
 
 Runs the app in the development mode.\

@@ -1,0 +1,54 @@
+
+.carousel-container {
+    overflow: hidden;
+}
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+
+}
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 620px;
+    color: blue;
+}
+
+@media screen and (max-width: 425px) {
+    .carousel-item{
+        height: 263px;
+    }
+    .ButtonNext {
+        top: 210px !important;
+    }
+    .ButtonPrevious{
+        top: 210px !important;
+    }
+    .imgNyP {
+        width: 20px !important;
+        height: 26px !important;
+    }
+   
+}
+
+.ButtonNext {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 340px;
+    right: 30px;
+}
+.imgNyP {
+    width: 41px;
+    height: 71px;
+    border-radius: 20px;
+}
+
+.ButtonPrevious {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 340px;
+    left: 20px;
+}
