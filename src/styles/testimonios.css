@@ -8,15 +8,12 @@
 }
 
 .testimonios__item {
-    
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 250px;
-   
-    white-space: pre-wrap !important;
-
+    
 }       
 
 .indicators {

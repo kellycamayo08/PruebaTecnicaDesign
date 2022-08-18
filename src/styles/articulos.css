@@ -1,15 +1,21 @@
 
 .title {
     font-family: 'Merriweather';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    border-bottom: 1px dashed #000000;
+    padding: 20px 0;
+    
+}
 
-letter-spacing: -0.02em;
-color: #000000;
-border-bottom: 1px dashed #000000;
-padding: 20px 0;
+@media screen and (max-width:425px) {
+    .title {
+        font-size: 30px;
+    }
 }
 
 .img__articulos {

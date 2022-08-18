@@ -2,6 +2,11 @@
     width: 730px;
     margin: 0 auto;
 }
+@media screen and (max-width: 425px) {
+    .wrapper {
+        width: 350px;
+    }
+}
 
 .accordion__wrapper {
     margin-top: 0.5em;
@@ -16,9 +21,10 @@
 
 .accordion__title{
     font-family: 'Source Sans Pro';
+    font-weight: bold;
     font-size: 24px;
     cursor: pointer;
-    padding: 0.5em 1.5em;
+    padding: 5px 5px;
     border-bottom: 1px solid #414141;
     display: flex;
     justify-content: space-between;

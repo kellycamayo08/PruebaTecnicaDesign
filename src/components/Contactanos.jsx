@@ -10,11 +10,13 @@ const Contactanos = () => {
             <img className='img__circle' src={circle} alt="" srcset="" />
             <Grid>
                 <form className='form__contact'>
-                   <h1> Contactanos</h1>
+                   <h1 className='title__contact'> Contactanos</h1>
                    <input className='input__text' type="text" placeholder='Ingresa tu nombre' />
                    <input className='input__text' type="text" placeholder='Ingresa tu correo' />
                    <input className='input__text input__message' type="text" placeholder='Mensaje' />
-                   <button>Enviar</button>
+                   <button
+                    onClick={()=> alert('Mensaje enviado')}
+                   className='button__send'>Enviar</button>
                 </form>
 
             </Grid>

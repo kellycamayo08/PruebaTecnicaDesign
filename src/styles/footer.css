@@ -1,3 +1,48 @@
 .container__footer {
     background-color: #265E6C;
+    height: 207px;
+    padding: 50px;
+}
+
+.mcontigo {
+    width: 190px;
+    height: 32px;
+}
+.text {
+    font-family: 'Merriweather';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* or 133% */
+
+letter-spacing: -0.02em;
+
+/* basic/white */
+
+color: #FFFFFF;
+margin: 0 24px;
+width: 454px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .line{
+        width: 800px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .line{
+        width: 700px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .line{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .line{
+        width: 300px;
+    }
 }

@@ -26,7 +26,7 @@ const Testimonios = ({children}) => {
     }
 
     return (
-        <Grid container spacing={2} 
+        <Grid spacing={2} 
         margin='100px 0'
         >
             <Grid item xs={10} md={12}
@@ -39,9 +39,9 @@ const Testimonios = ({children}) => {
                 <h2 className='title'>Testimonios</h2>
             </Grid>
 
-            <Grid container
-                columns={{ xs: 4, sm: 8, md: 12 }}
-                xs={12} md={12}
+            <Grid 
+                columns={{ xs: 4, sm: 8, md: 10 }}
+                xs={10} md={10}
                 display='flex'
                 justifyContent='center'
                 padding='0px !important'

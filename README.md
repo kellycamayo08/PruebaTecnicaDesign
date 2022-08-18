@@ -15,7 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Clonar repositorio
 
-`git clone https://github.com/kellycamayo08/PruebaTecnicaDesign`
+`git clone https://github.com/kellycamayo08/PruebaTecnicaDesign.git`
 
 ### Instalación de dependencias
 

@@ -23,33 +23,29 @@ const Accordion = ({ title, children }) => {
 
 const PreguntasF = () => {
     return (
-        <Grid container spacing={2}
+        <Grid container 
         margin='150px 0'
+        justifyContent='center'
+        justifyItems='center'
         >
-            <Grid item xs={10} md={12}
+            <Grid item xs={8} md={10}
                 display='flex'
                 justifyContent='center'
                 justifyItems='center'
+                alignItems='center'
                 marginTop='40px'
                 marginBottom='20px'
+                
             >
                 <h2 className='title'>Preguntas Frecuentes</h2>
             </Grid>
-            <Grid container
-                columns={{ xs: 4, sm: 8, md: 12 }}
-                xs={12} md={12}
-                display='flex'
-                justifyContent='center'
-                padding='0px !important'
-            >
-                <Grid item xs={12}
-                    container
-                    columns={{ xs: 4, sm: 8, md: 12 }}
-                    display='flex'
-                    justifyContent='center'
+            
+                <Grid item 
+                 
+                   
                     padding='0px !important'
                 >
-                    <div className='wrapper'>
+                    <div sx={4} className='wrapper'>
                         <Accordion title='¿Cuáles son los pasos para tomar una decisión?' >
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta adipisci sunt debitis nihil corporis dolores doloremque, molestias natus iure laboriosam doloribus voluptas laborum iusto facilis consectetur eius est dignissimos ut!
                         </Accordion>
@@ -60,7 +56,7 @@ const PreguntasF = () => {
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta adipisci sunt debitis nihil corporis dolores doloremque, molestias natus iure laboriosam doloribus voluptas laborum iusto facilis consectetur eius est dignissimos ut!
                         </Accordion>
                     </div>
-                </Grid>
+               
             </Grid>
         </Grid>
     );
