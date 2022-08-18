@@ -6,7 +6,7 @@ import prev from '../images/prev.svg'
 
 export const CarouselItem = ({children,width}) => {
     return (
-        <div className='carousel-item' style={{width: width}}>
+        <div className='carousel__item' style={{width: width}}>
             {children}
         </div>
 
@@ -49,7 +49,7 @@ const Carousel = ({children}) => {
     return (
         <div 
         {...handlers}
-        className='carousel-container'>
+        className='carousel__container'>
             <div className='inner' style={{transform: `translateX(-${activeCar * 100}%)`}}>
                 {
                     React.Children.map(children, (child, index) => {
@@ -58,20 +58,20 @@ const Carousel = ({children}) => {
                 }
             </div>
             <button
-            className='ButtonPrevious'
+            className='button__previous'
             onClick={() => {
                 updateCarousel(activeCar - 1)
             }}
             >
-                <img className='imgNyP ' src={prev} alt="" />
+                <img className='img__NyP ' src={prev} alt="" />
             </button>
             <button
-            className='ButtonNext'
+            className='button__next'
              onClick={() => {
                 updateCarousel(activeCar + 1)
             }}
             >
-                <img className='imgNyP ' src={next} alt="" />
+                <img className='img__NyP ' src={next} alt="" />
             </button>
         </div>
     );

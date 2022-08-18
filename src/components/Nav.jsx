@@ -24,10 +24,10 @@ const Nav = () => {
 
                 </button>
 
-                <a href='/' className='brand-name'>
+                <a href='/' className='brand__name'>
                     <img src={logo} alt="" />
                 </a>
-                <a href='/' className='brand-search'>
+                <a href='/' className='brand__search'>
                     <img src={search} alt="" />
                 </a>
 

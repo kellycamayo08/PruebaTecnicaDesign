@@ -1,5 +1,5 @@
 
-.carousel-container {
+.carousel__container {
     overflow: hidden;
 }
 .inner {
@@ -7,7 +7,7 @@
     transition: transform 0.3s;
 
 }
-.carousel-item {
+.carousel__item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -16,36 +16,36 @@
 }
 
 @media screen and (max-width: 425px) {
-    .carousel-item{
+    .carousel__item{
         height: 263px;
     }
-    .ButtonNext {
+    .button__next {
         top: 210px !important;
     }
-    .ButtonPrevious{
+    .button__previous{
         top: 210px !important;
     }
-    .imgNyP {
+    .img__NyP {
         width: 20px !important;
         height: 26px !important;
     }
    
 }
 
-.ButtonNext {
+.button__next {
     border: none;
     background-color: transparent;
     position: absolute;
     top: 340px;
     right: 30px;
 }
-.imgNyP {
+.img__NyP {
     width: 41px;
     height: 71px;
     border-radius: 20px;
 }
 
-.ButtonPrevious {
+.button__previous {
     border: none;
     background-color: transparent;
     position: absolute;

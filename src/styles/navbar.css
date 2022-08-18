@@ -10,14 +10,14 @@
     
 }
 
-.brand-name {
+.brand__name {
     text-decoration: none;
     color: black;
     font-size: 15px;
     margin: 0 auto;
 }
 
-.brand-search {
+.brand__search {
     padding: 0 8%;
 }
 
