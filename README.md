@@ -1,4 +1,4 @@
-# Prueba tecnica de Diseñador y maquetador web
+# Prueba tecnica de Diseñador y Maquetador Web
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
