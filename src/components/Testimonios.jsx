@@ -1,11 +1,34 @@
-import React from 'react';
-import imagen1 from '../images/imagen1.jpg'
+import React, { useState } from 'react';
 import { Grid } from '@mui/material';
+import '../styles/testimonios.css'
+import butterfly from '../images/logo__mariposa.svg'
 
-
-const Testimonios = () => {
+export const TestItems = ({children, width}) => {
     return (
-        <Grid container spacing={2} >
+        <div className='testimonios__item' style={{width: width}}>
+            {children}
+        </div>
+    )
+}
+
+
+const Testimonios = ({children}) => {
+
+    const [active, setActive] = useState(0)
+
+    const update = (newIn) => {
+        if (newIn < 0) {
+            newIn = 0
+        }else if(newIn >= React.Children.count(children)){
+            newIn = React.Children.count(children) - 1
+        }
+        setActive(newIn)
+    }
+
+    return (
+        <Grid container spacing={2} 
+        margin='100px 0'
+        >
             <Grid item xs={10} md={12}
                 display='flex'
                 justifyContent='center'
@@ -23,36 +46,33 @@ const Testimonios = () => {
                 justifyContent='center'
                 padding='0px !important'
             >
-
-                <Grid item xs={12}
-                    container
-                    columns={{ xs: 4, sm: 8, md: 12 }}
-                    display='flex'
-                    justifyContent='center'
-                    padding='0px !important'
-                >
-                    <Grid className='container__card2'>
-                        <div className='container__img2'>
-                            <img className='img' src={imagen1} alt="" />
+                <img className='logo__butterfly' src={butterfly} alt="" />
+               
+    
+                    <div className='testimonios__carousel'>
+                        <div className='testimonios__inner'
+                        style={{transform: `translateX(-${active * 100}%)`}}>
+                            {
+                                React.Children.map(children, (child, index) => {
+                                    return React.cloneElement(child, { width: '100%'})
+                                })
+                            }
                         </div>
-                        <div className='container__contents2'>
-                            <h3 className='text__card title__card2'>Colapso mental: cuando siento el peso del mundo sobre mí</h3>
-                            <p className='paragraph__card'>A veces nos sentimos como Atlas, aquel titán al que Zeus castigó y le obligó a llevar el peso de…</p>
+                        <div className='indicators'>
+                            {
+                                React.Children.map(children, (child, index) => {
+                                    return (
+                                        <button 
+                                        className={`${index === active ? 'active': 'inactive'}`}
+                                        onClick={() =>{update(index)} }>
+                               
+                                        </button>
+                                    )
+                                })
+                            }
                         </div>
-                    </Grid>
-                    <Grid className='container__card2'>
-                        <div className='container__img2'>
-                            <img className='img' src={imagen1} alt="" />
-                        </div>
-                        <div className='container__contents2'>
-                            <h3 className='text__card title__card2'>Colapso mental: cuando siento el peso del mundo sobre mí</h3>
-                            <p className='paragraph__card'>A veces nos sentimos como Atlas, aquel titán al que Zeus castigó y le obligó a llevar el peso de…</p>
-                        </div>
-                    </Grid>
-                </Grid>
-
-
-
+                        <img className='butterfly__dos' src={butterfly} alt="" />
+                    </div>
 
             </Grid>
         </Grid>

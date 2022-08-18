@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+.container__contact {
+    background-color: #E7E7E7;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+}
+.form__contact {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    width: 546px;
+    height: 597px;
+    border-radius: 30px;
+}
+.img__circle {
+    position: absolute;
+    left: 10px;
+    top: 4580px;
+}
+.img__email {
+    position: absolute; 
+    left: 950px;
+    top: 4690px;
+    width: 489px;
+    height: 355px;
+}
+.input__text {
+    width: 343px;
+    height: 56px;
+    border: 1px solid #CACACA;
+    border-radius: 4px;
+    padding-left: 16px;
+    font-family: 'Source Sans Pro';
+}
+.input__message {
+    width: 343px;
+    height: 171px;
+   
+}

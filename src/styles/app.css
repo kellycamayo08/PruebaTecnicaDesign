@@ -9,3 +9,16 @@
     }
     
 }
+.text__testimonio {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #414141;
+    white-space: pre-line ;
+    width: 590px;
+    
+}

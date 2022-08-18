@@ -1,11 +1,31 @@
-import React from 'react';
-import imagen1 from '../images/imagen1.jpg'
+import React, { useState } from 'react';
 import { Grid } from '@mui/material';
+import '../styles/preguntasF.css'
+
+const Accordion = ({ title, children }) => {
+    const [Open, setOpen] = useState(false)
+    return (
+        <div className='accordion__wrapper'>
+            <div className={`accordion__title ${Open ? 'open' : ""}`}
+                onClick={() => setOpen(!Open)}>
+                {title}
+            </div>
+            <div className={`accordion__item ${!Open ? 'collapsed' : ''}`}>
+                <div className='accordion__content'>
+                    {children}
+                </div>
+            </div>
+        </div>
+
+    )
+}
 
 
 const PreguntasF = () => {
     return (
-        <Grid container spacing={2} >
+        <Grid container spacing={2}
+        margin='150px 0'
+        >
             <Grid item xs={10} md={12}
                 display='flex'
                 justifyContent='center'
@@ -29,15 +49,17 @@ const PreguntasF = () => {
                     justifyContent='center'
                     padding='0px !important'
                 >
-                    <Grid className='container__card2'>
-                        <div className='container__img2'>
-                            <img className='img' src={imagen1} alt="" />
-                        </div>
-                        <div className='container__contents2'>
-                            <h3 className='text__card title__card2'>Colapso mental: cuando siento el peso del mundo sobre mí</h3>
-                            <p className='paragraph__card'>A veces nos sentimos como Atlas, aquel titán al que Zeus castigó y le obligó a llevar el peso de…</p>
-                        </div>
-                    </Grid>
+                    <div className='wrapper'>
+                        <Accordion title='¿Cuáles son los pasos para tomar una decisión?' >
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta adipisci sunt debitis nihil corporis dolores doloremque, molestias natus iure laboriosam doloribus voluptas laborum iusto facilis consectetur eius est dignissimos ut!
+                        </Accordion>
+                        <Accordion title='¿Cuáles son los pasos para tomar una decisión?' >
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta adipisci sunt debitis nihil corporis dolores doloremque, molestias natus iure laboriosam doloribus voluptas laborum iusto facilis consectetur eius est dignissimos ut!
+                        </Accordion>
+                        <Accordion title='¿Cuáles son los pasos para tomar una decisión?' >
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta adipisci sunt debitis nihil corporis dolores doloremque, molestias natus iure laboriosam doloribus voluptas laborum iusto facilis consectetur eius est dignissimos ut!
+                        </Accordion>
+                    </div>
                 </Grid>
             </Grid>
         </Grid>
