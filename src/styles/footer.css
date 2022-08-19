@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 .container__footer {
     background-color: #265E6C;
-    height: 207px;
+    height: 100%;
     padding: 50px;
 }
 
@@ -10,21 +11,34 @@
 }
 .text {
     font-family: 'Merriweather';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-/* or 133% */
-
-letter-spacing: -0.02em;
-
-/* basic/white */
-
-color: #FFFFFF;
-margin: 0 24px;
-width: 454px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin: 0 24px;
+    width: 454px;
 }
 
+.text__footer{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin:  20px ;
+    text-align: center;
+}
+
+
+
+.line{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width: 1000px) {
     .line{
@@ -39,6 +53,10 @@ width: 454px;
 @media screen and (max-width: 425px) {
     .line{
         width: 400px;
+    }
+    .text {
+        width: 300px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 375px) {

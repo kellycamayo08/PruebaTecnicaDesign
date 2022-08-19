@@ -6,21 +6,25 @@ import mcontigo from '../images/White.svg'
 
 const Footer = () => {
     return (
-        <div className='container__footer'>
+        <Grid container className='container__footer'
+        display='flex'
+        justifyContent='center'
+        >
             <Grid 
+            container
+            columns={{ xs: 4, sm: 8, md: 12 }}
+            xs={12} md={12}
             display='flex'
-            flexDirection='row'
             justifyContent='center'
             justifyItems='center'
             padding='20px'
-            item xs={12}
-            columns={{ xs: 4, sm: 8, md: 12 }}
+            
+             
             >
-                <Grid
-                columns={{ xs: 4, sm: 8, md: 12 }}
-                item xs={12}
+                <Grid className='container__mcontigo'
                 display='flex'
                 alignItems='center'
+                margin='20px 0'
                 >
                     <img className='mcontigo' src={mcontigo} alt="" />
                 </Grid>
@@ -37,7 +41,9 @@ const Footer = () => {
             >
                 <img className='line' src={line} alt="" />
             </Grid>
-            <Grid
+            <Grid container
+            columns={{ xs: 4, sm: 8, md: 12 }}
+            xs={12} md={12}
             display='flex'
             justifyContent='center'
             >
@@ -46,7 +52,7 @@ const Footer = () => {
                 <p className='text__footer'>Términos y condiciones de uso</p>
                 <p className='text__footer'>Cláusula Informativa de Consentimiento</p>
             </Grid>
-        </div>
+        </Grid>
     );
 };
 
